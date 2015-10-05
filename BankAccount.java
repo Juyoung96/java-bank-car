@@ -41,12 +41,11 @@ public class BankAccount {
    return balance; 
   } // end getBalance()
   
-  public double getBalance( int password ) {
+  public void getBalance( int password ) {
     if( accPass == password ) {
     System.out.println( "Account balance: $" + balance );
   } else {
    System.out.print( "Incorrect Password. Try again. "); 
-   return 404;
   }
   }
 } // end class
